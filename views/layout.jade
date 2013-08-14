@@ -1,0 +1,189 @@
+include library
+
+!!!
+html(xmlns='http://www.w3.org/1999/xhtml')
+	head
+		link(rel='stylesheet', href='css/main.css')
+		link(href='/favicon.ico', rel='shortcut icon')
+		//- meta(name="google-site-verification", content="FBhLDupSB_PeX9oZ0qMZKHFG7mLJYxtzEDZLPhjaU9U")
+		//- meta(name="google-site-verification", content="1s-zGL3ZsKwTG6dsRnlyso_LppDsFp73fh7MM_N4nuk")
+		meta(http-equiv='Content-Type', content='text/html; charset=iso-8859-1')
+		meta(name='keywords', content='custom shipping, milwaukee crating company, specialty shipping services, packaging')
+
+		block style
+
+		//- override these blocks with new tags for each page
+		block meta
+			mixin meta('The Packaging Store in Hartland. Our clients consistently rank us as one of the best Mover services in The Greater Milwaukee, WI Area. The Packaging Store is located at #{address}. Call #{formatted_phone_number}')
+		
+		block title
+			mixin title('Art Shipping, Technology Equipment Shipping Industrial Crating, Small Moves')
+
+	body
+		#wrap
+			#header
+				a#logo(href='/')
+					img(src='/img/logo.gif')
+				#uptrack
+					p.loc Serving The Greater Milwaukee, WI Area 
+					h2
+						| Need Help Shipping?
+						br
+						| Call us 
+						strong #{formatted_phone_number}
+
+					:markdown
+						or [click here](/contact) to contact us online.
+
+			#content.clearfix
+				ul#nav(class='#{page}')
+					li.index
+						a(href='/') Home
+					li.about
+						a(href='/about.html') About Us
+					li.services
+						a(href='/services.html') Services
+					li.testimonials
+						a(href='/testimonials.html') Testimonials
+					li.contact
+						a(href='/contact.html') Contact Us
+
+
+				block bannerhome
+
+				#left
+					block sidebarimage
+
+					#services
+						h3 What can we pack & ship for you?
+						ul
+							li
+								a(href='/services/shipping.html') Shipping
+							li
+								a(href='/services/international-shipping.html') International Shipping
+							li
+								a(href='/services/art-shipping.html') Art Shipping
+							li
+								a(href='/services/technology-equipment-shipping.html') Technology Equipment Shipping
+							li
+								a(href='/services/small-moves.html') Small Moves
+							li
+								a(href='/services/industrial-crating.html') Industrial Crating
+							li
+								a(href='/services/packaging.html') Packaging
+
+					#testi
+						block testi
+
+				#maincontent
+					block maincontent
+						#main
+							block main
+
+								.container
+									h2.contact_us
+										| Start your shipping today
+										br
+										| Call us at 
+										strong #{formatted_phone_number} 
+										| or
+										br
+										a(href='/contact.html') contact us
+										|  online.
+
+						#right
+							block right
+								img(src='/img/img_form.jpg', style="margin:0;")
+								h2
+									| get a 
+									span.free free 
+									| online quote
+									br
+									span.start start here
+
+
+								form(name='contact', method='post', action='/quote-request')
+									h2 shipping estimate
+									
+									label(for='name') Name
+									input(name='name', type='text')
+
+									br
+
+									label(for='email') Email
+									input(name='email', type='text')
+
+									br
+
+									label(for='phone') Phone
+									input(name='phone', type='text')
+
+									fieldset
+										legend Shipment Zip Codes
+
+										label(for='zip-from') From
+										input(name='zip-from', type='number')
+
+										br
+
+										label(for='zip-to') To
+										input(name='zip-to', type='number')
+
+									label(for='comments') Additional Info
+									br
+									textarea(name='comments')
+										| please note what you are shipping, and weight/dimensions
+
+									input.large_button.yellow(type='submit', value='Contact Us', style='width: 200px;/*chrome fix*/')
+									p(style="color: white; text-align: center; padding: 10px;") this is just a demo site, submitting the form isn't going to do anything
+
+			#footer
+				ul
+					li
+						a(href="/") Home
+					li
+						a(href="/about") About Us
+					li
+						a(href="/services") Services
+					li
+						a(href="/testimonials") Testimonials
+					li
+						a(href="/contact") Contact Us
+					li
+						a(href="https://plus.google.com/112684240801612473768", rel="publisher") Google+
+					li
+						a(href="https://www.facebook.com/pages/Handle-With-Care-Packaging/275211685928685") Facebook
+
+				:markdown
+					Serving The Greater Milwaukee, WI Area - Call Us **#{formatted_phone_number}**
+
+				:markdown
+					**2012 HANDLE WITH CARE PACKAGING STORE**
+
+		//- block script
+			//- Piwik
+			script(type="text/javascript").
+				var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.packwi.com/" : "http://piwik.packwi.com/");
+				document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+			script(type="text/javascript")
+				| try {
+				| 	var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+				- if(error_code){
+				| piwikTracker.setDocumentTitle('#{error_code}/URL = '+String(document.location.pathname+document.location.search).replace(/\//g,"%2f") + '/From = ' + String(document.referrer).replace(/\//g,"%2f")); 	
+				- }
+				| 	var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
+				| 	piwikTracker.setCustomVariable(1, 'browserWidth', x, "page");
+				| 	piwikTracker.setCustomVariable(2, 'browserHeight', y, "page");
+				| 	piwikTracker.trackPageView();
+				| 	piwikTracker.enableLinkTracking();
+				| } catch(err) {}
+
+		//- noscript
+			p
+				img(src="http://piwik.packwi.com/piwik.php?idsite=1", style="border:0", alt="")
+
+		//- this must be included for live reload to work in developement
+		//- it will be automatically ignored when deployed
+		!= livereload
+	
+

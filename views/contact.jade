@@ -1,0 +1,33 @@
+extends layout
+include library
+
+block meta
+	mixin meta('The Packaging Store in Hartland. Our clients consistently rank us as one of the best Mover services in The Greater Milwaukee, WI Area. The Packaging Store is located at #{address}. Call #{formatted_phone_number}')
+
+block title
+	mixin title('Art Shipping, Technology Equipment Shipping Industrial Crating, Small Moves')
+
+block sidebarimage
+	img(src='/img/pic_05.jpg')
+
+block testi
+	mixin testi('Elizabeth M', 'San Francisco, CA', 'Our cross-country shipment arrived right on time (and quickly) and everything was well-packed and in excellent condition...')
+
+block main
+	h2 Contact Us
+	p If you would like to contact us please fill out the form to the right.
+	h2 Want an immediate response?
+	p
+		| Call us right now at 
+		strong #{formatted_phone_number}
+		| !
+	h2 Our Location
+	p
+		| #{address}
+		br
+
+	p(align='center')
+		iframe(width=425, height=350, frameborder=0, scrolling="no", marginheight=0, marginwidth=0, src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en-US&amp;geocode=&amp;q=%22Handle+With+Care+Packaging+Store%22,+N77W31144+Hartman+Ct+Ste+B,+Hartland,+WI+53029&amp;aq=&amp;sll=43.160427,-88.362672&amp;sspn=0.004852,0.012381&amp;t=h&amp;gl=US&amp;ie=UTF8&amp;hq=%22Handle+With+Care+Packaging+Store%22,+N77W31144+Hartman+Ct+Ste+B,&amp;hnear=Hartland,+Waukesha,+Wisconsin&amp;ll=43.162775,-88.362436&amp;spn=0.005478,0.00912&amp;z=16&amp;output=embed")
+		br
+		small
+			a(href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en-US&amp;geocode=&amp;q=%22Handle+With+Care+Packaging+Store%22,+N77W31144+Hartman+Ct+Ste+B,+Hartland,+WI+53029&amp;aq=&amp;sll=43.160427,-88.362672&amp;sspn=0.004852,0.012381&amp;t=h&amp;gl=US&amp;ie=UTF8&amp;hq=%22Handle+With+Care+Packaging+Store%22,+N77W31144+Hartman+Ct+Ste+B,&amp;hnear=Hartland,+Waukesha,+Wisconsin&amp;ll=43.162775,-88.362436&amp;spn=0.005478,0.00912&amp;z=16", style="color:#0000FF;text-align:left") View Larger Map

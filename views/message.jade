@@ -1,0 +1,18 @@
+extends layout
+include library
+
+block meta
+	mixin meta('The Packaging Store in Hartland. Our clients consistently rank us as one of the best Mover services in The Greater Milwaukee, WI Area. The Packaging Store is located at #{address}. Call #{formatted_phone_number}')
+
+block title
+	mixin title('Art Shipping, Technology Equipment Shipping Industrial Crating, Small Moves')
+
+block sidebarimage
+	img(src='/img/pic_05.jpg')
+
+block testi
+	mixin testi('Elizabeth M', 'San Francisco, CA', 'Our cross-country shipment arrived right on time (and quickly) and everything was well-packed and in excellent condition...')
+
+block main
+	h1= title
+	p= message
