@@ -2,127 +2,127 @@ extends layout
 include library
 
 append style
-	:stylus(compress=true, inline=true)
-		div.container
-			//title
-			h3
-				padding 0 0px 0px 10px
-				margin 0
-				margin-top -10px
-				color #005bac
-				text-transform capitalize
+  :stylus(compress=true, inline=true)
+    div.container
+      //title
+      h3
+        padding 0 0px 0px 10px
+        margin 0
+        margin-top -10px
+        color #005bac
+        text-transform capitalize
 
-				a
-					background #fff
-					padding 0 10px
-					color #005bac
+        a
+          background #fff
+          padding 0 10px
+          color #005bac
 
-					&:hover
-						text-decoration none
+          &:hover
+            text-decoration none
 
-			li
-				line-height 18px
-				padding 4px 6px 4px 0
-				margin 0
+      li
+        line-height 18px
+        padding 4px 6px 4px 0
+        margin 0
 
-			ol
-				margin 10px 14px 0 40px
-				padding 0 20px 0 0
+      ol
+        margin 10px 14px 0 40px
+        padding 0 20px 0 0
 
-			ul
-				margin 10px 14px 0 40px
-				padding 0 20px 0 20px
+      ul
+        margin 10px 14px 0 40px
+        padding 0 20px 0 20px
 
-			p
-				text-align right
-				margin-right 10px
+      p
+        text-align right
+        margin-right 10px
 
 
 block sidebarimage
-	img(src='/img/pic_03.jpg')
+  img(src='/img/pic_03.jpg')
 
 block testi
-	mixin testi('Elizabeth M.', 'San Francisco, CA', 'Our cross-country shipment arrived right on time and everything was well-packed, in excellent condition...')
+  mixin testi('Elizabeth M.', 'San Francisco, CA', 'Our cross-country shipment arrived right on time and everything was well-packed, in excellent condition...')
 
 block prepend main
 
-	h1 We Shipped This
-	p The Packaging Store specializes in shipping unusual items, no matter how large, fragile or valuable they may be.
+  h1 We Shipped This
+  p The Packaging Store specializes in shipping unusual items, no matter how large, fragile or valuable they may be.
 
-	a(name='solutions')
-	h3(style='margin-top: 20px;') For All Your Packaging and Shipping Solutions
-	ul.links
-		li
-			a(href='#custom-packing') Custom packing and crating
-		li
-			a(href='#shipping-options') Full range of shipping options
-		li
-			a(href='#international') International ocean and air
-		li
-			a(href='#full-service-pickup') Full service pickup & delivery
-		li
-			a(href='#additional-services') Additional Services (select locations)
-	div.container
-		h3
-			a(name='custom-packing') Custom packing and crating
-		ul
-			li Free initial design consultation & estimate
-			li Full service packing and crating for any item from one pound to thousands of pounds.
-			li Specialized packaging solutions for all types of art including framed, unframed, sculpture, glass and other types of media.
-			li Latest in packaging technologies including Foam in Place
-			li Industrial crating from lightweight sensitive items to heavy equipment
-			li International, ISPM-15 certified crates
-			li Containerization of large shipments including rigging and blocking & bracing.
-			li Onsite or offsite crating depending upon the scope of the project
-		p
-			a(href='#solutions') back to top
-	div.container
-		h3
-			a(name='shipping-options') Full range of shipping options
-		ul
-			li Inside pickup in Hartland or other points in the U.S.
-			li Shipping via Less Than Truckload (LTL), Air, Ocean, Small Parcel, Full Truckload, Flatbed, Climate Controlled, Expedited, Van Line and Pad Wrap
-			li Declared value coverage up to any value based on your individual shipment needs.
-			li Next Day, 2nd Day, Deferred, Ground and Time Definite services worldwide.
-			li International shipping via ocean and air.
-			li
-				| Residential shipping options include standard or premium level white glove delivery.
-			li Business destination services to the dock or full unpacking and debris removal.
-		p
-			a(href='#solutions') back to top
-	div.container
-		h3
-			a(name='international') International ocean and air
-		ul
-			li International, ISPM-15 certified crates
-			li Containerization of large shipments including rigging and blocking & bracing.
-			li
-				| International expertise that ensures your shipment meets complex customs regulations.
-			li Full Container Load (FCL) and Less than Container Load (LCL)
-		p
-			a(href='#solutions') back to top
-	div.container
-		h3
-			a(name='full-service-pickup') Full service pickup & delivery
-		ul
-			li
-				| Full service pickup in
-				city  or other points in the U.S.
-			li Same day, next day or guaranteed pickup day available.
-			li Standard, expedited or time guaranteed delivery options to meet your budget.
-			li
-				| Residential destination services include standard or premium level white glove home delivery based on your budget.
-			li
-				| Business destination services to the dock or full inside delivery with unpacking and debris removal.
-		p
-			a(href='#solutions') back to top
-	div.container
-		h3
-			a(name='additional-services') Additional Services (select locations)
-		ul
-			li Warehousing and fulfillment
-			li Receiving and local delivery for businesses and interior designers
-			li Short term storage
-			li Import services 
-		p
-			a(href='#solutions') back to top
+  a(name='solutions')
+  h3(style='margin-top: 20px;') For All Your Packaging and Shipping Solutions
+  ul.links
+    li
+      a(href='#custom-packing') Custom packing and crating
+    li
+      a(href='#shipping-options') Full range of shipping options
+    li
+      a(href='#international') International ocean and air
+    li
+      a(href='#full-service-pickup') Full service pickup & delivery
+    li
+      a(href='#additional-services') Additional Services (select locations)
+  div.container
+    h3
+      a(name='custom-packing') Custom packing and crating
+    ul
+      li Free initial design consultation & estimate
+      li Full service packing and crating for any item from one pound to thousands of pounds.
+      li Specialized packaging solutions for all types of art including framed, unframed, sculpture, glass and other types of media.
+      li Latest in packaging technologies including Foam in Place
+      li Industrial crating from lightweight sensitive items to heavy equipment
+      li International, ISPM-15 certified crates
+      li Containerization of large shipments including rigging and blocking & bracing.
+      li Onsite or offsite crating depending upon the scope of the project
+    p
+      a(href='#solutions') back to top
+  div.container
+    h3
+      a(name='shipping-options') Full range of shipping options
+    ul
+      li Inside pickup in Hartland or other points in the U.S.
+      li Shipping via Less Than Truckload (LTL), Air, Ocean, Small Parcel, Full Truckload, Flatbed, Climate Controlled, Expedited, Van Line and Pad Wrap
+      li Declared value coverage up to any value based on your individual shipment needs.
+      li Next Day, 2nd Day, Deferred, Ground and Time Definite services worldwide.
+      li International shipping via ocean and air.
+      li
+        | Residential shipping options include standard or premium level white glove delivery.
+      li Business destination services to the dock or full unpacking and debris removal.
+    p
+      a(href='#solutions') back to top
+  div.container
+    h3
+      a(name='international') International ocean and air
+    ul
+      li International, ISPM-15 certified crates
+      li Containerization of large shipments including rigging and blocking & bracing.
+      li
+        | International expertise that ensures your shipment meets complex customs regulations.
+      li Full Container Load (FCL) and Less than Container Load (LCL)
+    p
+      a(href='#solutions') back to top
+  div.container
+    h3
+      a(name='full-service-pickup') Full service pickup & delivery
+    ul
+      li
+        | Full service pickup in
+        city  or other points in the U.S.
+      li Same day, next day or guaranteed pickup day available.
+      li Standard, expedited or time guaranteed delivery options to meet your budget.
+      li
+        | Residential destination services include standard or premium level white glove home delivery based on your budget.
+      li
+        | Business destination services to the dock or full inside delivery with unpacking and debris removal.
+    p
+      a(href='#solutions') back to top
+  div.container
+    h3
+      a(name='additional-services') Additional Services (select locations)
+    ul
+      li Warehousing and fulfillment
+      li Receiving and local delivery for businesses and interior designers
+      li Short term storage
+      li Import services
+    p
+      a(href='#solutions') back to top

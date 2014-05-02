@@ -1,140 +1,140 @@
 @import library
 
 *
-	margin 0
-	padding 0
+  margin 0
+  padding 0
 
 body
-	start = #FEFEFE
-	end = #EEEEEE
-	distance = 40px
+  start = #FEFEFE
+  end = #EEEEEE
+  distance = 40px
 
-	background-color end
-	background -webkit-gradient(linear, 0% 0%, 0% 100%, from(start), color-stop(distance, end), to(end)) // Safari 4-5, Chrome 1-9
-	background -webkit-linear-gradient(top, start, end distance, end) // Safari 5.1, Chrome 10+
-	background -moz-linear-gradient(top, start, end distance, end) // Firefox 3.6+
-	background -ms-linear-gradient(top, start, end distance, end) // IE 10
-	background -o-linear-gradient(top, start, end distance, end) // Opera 11.10+
+  background-color end
+  background -webkit-gradient(linear, 0% 0%, 0% 100%, from(start), color-stop(distance, end), to(end)) // Safari 4-5, Chrome 1-9
+  background -webkit-linear-gradient(top, start, end distance, end) // Safari 5.1, Chrome 10+
+  background -moz-linear-gradient(top, start, end distance, end) // Firefox 3.6+
+  background -ms-linear-gradient(top, start, end distance, end) // IE 10
+  background -o-linear-gradient(top, start, end distance, end) // Opera 11.10+
 
-	font normal 12px body_font
-	color #000
+  font normal 12px body_font
+  color #000
 
 img
-	border 0
-	display block
+  border 0
+  display block
 
 h1, h2
-	font-size 22px
-	color #333
-	font-family title_font
+  font-size 22px
+  color #333
+  font-family title_font
 
 h1
-	text-transform capitalize
-	margin 4px 0 6px
+  text-transform capitalize
+  margin 4px 0 6px
 
 h2
-	text-transform uppercase
-	margin 20px 0 4px
+  text-transform uppercase
+  margin 20px 0 4px
 
 h3
-	font-size 14px
-	color #333
-	//line-height 18px
-	margin 12px
+  font-size 14px
+  color #333
+  //line-height 18px
+  margin 12px
 
 p
-	margin 0 0 12px
-	padding 0
+  margin 0 0 12px
+  padding 0
 
 a
-	color #f90200
-	font-weight 700
-	text-decoration none
+  color #f90200
+  font-weight 700
+  text-decoration none
 
-	&:hover
-		color red
-		font-weight 700
-		text-decoration underline
+  &:hover
+    color red
+    font-weight 700
+    text-decoration underline
 
 #wrap
-	width 990px
-	margin 0 auto
-	padding 0
+  width 990px
+  margin 0 auto
+  padding 0
 
 #header
-	height 124px
-	font-family body_font
-	margin 0
-	padding 0 20px
+  height 124px
+  font-family body_font
+  margin 0
+  padding 0 20px
 
-	#logo
-		float left
-		margin 0
-		padding 18px 0 0
+  #logo
+    float left
+    margin 0
+    padding 18px 0 0
 
 #uptrack
-	float right
-	text-align right
-	margin 0
-	padding 14px 0 0
+  float right
+  text-align right
+  margin 0
+  padding 14px 0 0
 
-	p
-		font-size 14px
-		margin 0
-		padding 0
+  p
+    font-size 14px
+    margin 0
+    padding 0
 
-		&.loc
-			color red
-			font-size 18px
-			font-weight 400
-			margin 0
-			padding 0
+    &.loc
+      color red
+      font-size 18px
+      font-weight 400
+      margin 0
+      padding 0
 
-	h2
-		font-size 20px
-		font-weight 400
-		line-height 26px
-		margin 0
-		padding 0
+  h2
+    font-size 20px
+    font-weight 400
+    line-height 26px
+    margin 0
+    padding 0
 
-		strong
-			font-weight normal
-			font-size 30px
+    strong
+      font-weight normal
+      font-size 30px
 
 #content
-	background white
-	padding 0 0 20px
+  background white
+  padding 0 0 20px
 
 
 nav_height = 45px
 nav_horizontal_spacing = 40px // amount of space between nav elements
 
 #nav
-	font-family title_font
-	height nav_height
-	border-bottom 7px red solid
-	padding-left (nav_horizontal_spacing / 2px)
+  font-family title_font
+  height nav_height
+  border-bottom 7px red solid
+  padding-left (nav_horizontal_spacing / 2px)
 
-	li
-		list-style none
-		display inline
+  li
+    list-style none
+    display inline
 
-		a
-			background_padding = 5px  // amount of padding between background and edge of nav bar
-			
-			color #5f605e
-			display inline-block
-			padding 0 (nav_horizontal_spacing / 2px)
-			margin background_padding 0
-			font-size 13px
-			text-decoration none
-			text-transform uppercase
-			line-height nav_height - background_padding*2  // center text
-			height nav_height - background_padding*2
-			border_radius(nav_height/2 - background_padding)
-	
-			&:hover
-				color #f90200
+    a
+      background_padding = 5px  // amount of padding between background and edge of nav bar
+
+      color #5f605e
+      display inline-block
+      padding 0 (nav_horizontal_spacing / 2px)
+      margin background_padding 0
+      font-size 13px
+      text-decoration none
+      text-transform uppercase
+      line-height nav_height - background_padding*2  // center text
+      height nav_height - background_padding*2
+      border_radius(nav_height/2 - background_padding)
+
+      &:hover
+        color #f90200
 
 
 #nav.index li.index,
@@ -142,323 +142,323 @@ nav_horizontal_spacing = 40px // amount of space between nav elements
 #nav.services li.services,
 #nav.testimonials li.testimonials,
 #nav.contact li.contact
-	a
-		background #f2f2f2
-		color #333
-		cursor default
+  a
+    background #f2f2f2
+    color #333
+    cursor default
 
 #bannerhome
-	position relative
-	border-bottom 10px solid blue
-	background #1683C8 
+  position relative
+  border-bottom 10px solid blue
+  background #1683C8
 
 #banner-in
-	position absolute
-	left 390px
-	top 20px
+  position absolute
+  left 390px
+  top 20px
 
-	p
-		color white
-		font-size 55px
-		line-height 52px
-		font-family title_font
-		text-shadow: 1px 1px 1px #272727;
-		margin-bottom 30px
-		//filter dropshadow(color=#000000, offx=1, offy=1)
+  p
+    color white
+    font-size 55px
+    line-height 52px
+    font-family title_font
+    text-shadow: 1px 1px 1px #272727;
+    margin-bottom 30px
+    //filter dropshadow(color=#000000, offx=1, offy=1)
 
-		strong
-			font-size 45px
-			margin-top 30px
-			display block
-			text-transform uppercase
+    strong
+      font-size 45px
+      margin-top 30px
+      display block
+      text-transform uppercase
 
 #testi
-	padding 6px 16px 0
+  padding 6px 16px 0
 
-	p
-		font-style italic
-		font-size 12px
-		margin 10px 0 6px
+  p
+    font-style italic
+    font-size 12px
+    margin 10px 0 6px
 
-	h3
-		font-weight 700
-		font-size 13px
-		margin 0
-		padding 0
+  h3
+    font-weight 700
+    font-size 13px
+    margin 0
+    padding 0
 
-		i
-			font-weight 400
-			font-size 12px
+    i
+      font-weight 400
+      font-size 12px
 
 #services
-	padding 16px 16px 0
+  padding 16px 16px 0
 
-	h3
-		color blue
-		font-size 22px
-		font-family title_font
-		font-weight 400
-		border-top 1px solid light_blue
-		border-bottom 1px solid light_blue
-		padding 6px 0
+  h3
+    color blue
+    font-size 22px
+    font-family title_font
+    font-weight 400
+    border-top 1px solid light_blue
+    border-bottom 1px solid light_blue
+    padding 6px 0
 
-	ul
-		padding 10px 0 0
+  ul
+    padding 10px 0 0
 
-	li
-		list-style none
-		background url(/img/arrows.jpg) no-repeat center left
-		margin 10px 0
-		padding 0 16px
+  li
+    list-style none
+    background url(/img/arrows.jpg) no-repeat center left
+    margin 10px 0
+    padding 0 16px
 
 #maincontent
-	width 770px
-	float right
-	margin 0
-	padding 0
+  width 770px
+  float right
+  margin 0
+  padding 0
 
-	p
-		line-height 18px
-		padding 0 10px 0 0
+  p
+    line-height 18px
+    padding 0 10px 0 0
 
-	h1
-		margin 20px 0 6px
-		padding 0
+  h1
+    margin 20px 0 6px
+    padding 0
 
-	ul.biglist
-		margin 10px 0
+  ul.biglist
+    margin 10px 0
 
-		li
-			margin 0
-			float left
-			width (main_col_width/2 - 31px)
-			list-style-image url(/img/bg_biglist.jpg)
-			text-transform uppercase
-			margin 8px 6px 0 24px
+    li
+      margin 0
+      float left
+      width (main_col_width/2 - 31px)
+      list-style-image url(/img/bg_biglist.jpg)
+      text-transform uppercase
+      margin 8px 6px 0 24px
 
 small
-	font-size 13px
-	color blue
+  font-size 13px
+  color blue
 
 #main
-	width main_col_width
-	float left
+  width main_col_width
+  float left
 
-	ul
-		margin 10px 20px
+  ul
+    margin 10px 20px
 
-	li
-		line-height 16px
-		margin 0 0 14px
+  li
+    line-height 16px
+    margin 0 0 14px
 
-	p.postedby
-		font-weight 700
-		margin 10px 0 0
-		padding 0
+  p.postedby
+    font-weight 700
+    margin 10px 0 0
+    padding 0
 
-		em
-			color gray
-			font-weight 400
+    em
+      color gray
+      font-weight 400
 
 #left
-	float left
-	width 218px
-	margin 0
-	padding 0
+  float left
+  width 218px
+  margin 0
+  padding 0
 
 #right
-	width right_col_width
-	float right
+  width right_col_width
+  float right
 
 #left, #right
-	img
-		margin 10px auto //center image
+  img
+    margin 10px auto //center image
 
 .links li
-	list-style none
-	background url(/img/arrows.jpg) no-repeat center left
-	text-transform capitalize
-	margin 6px 0
-	padding 0 16px
+  list-style none
+  background url(/img/arrows.jpg) no-repeat center left
+  text-transform capitalize
+  margin 6px 0
+  padding 0 16px
 
 #footer
-	background #01265b url(/img/bg_footer.jpg) no-repeat top right
-	height 67px
-	font-size 11px
-	margin 0 0 20px
-	padding 10px 20px 0
+  background #01265b url(/img/bg_footer.jpg) no-repeat top right
+  height 67px
+  font-size 11px
+  margin 0 0 20px
+  padding 10px 20px 0
 
-	a
-		color white
-		font-weight 700
+  a
+    color white
+    font-weight 700
 
-	p
-		color #efefef
-		margin 0
-		padding 0 0 6px
+  p
+    color #efefef
+    margin 0
+    padding 0 0 6px
 
-	ul
-		padding 0 0 6px
+  ul
+    padding 0 0 6px
 
-	li
-		display inline
-		font-weight 400
+  li
+    display inline
+    font-weight 400
 
-		a
-			font-weight 400
-			border-right 1px solid white
-			padding 0 8px
+    a
+      font-weight 400
+      border-right 1px solid white
+      padding 0 8px
 
-		&:first-child a
-			padding-left 0
+    &:first-child a
+      padding-left 0
 
-		&:last-child a
-			border-right 0
+    &:last-child a
+      border-right 0
 
 .clearfix:after
-	content "."
-	display block
-	height 0
-	clear both
-	visibility hidden
+  content "."
+  display block
+  height 0
+  clear both
+  visibility hidden
 
 p.big-italic
-	text-align center
-	font-size 18px
-	font-style italic
-	padding 0 20px
+  text-align center
+  font-size 18px
+  font-style italic
+  padding 0 20px
 
 //form
 #right
-	h2
-		margin 0
+  h2
+    margin 0
 
-		text-transform none
-		font-size: 20px
-		color blue
-		text-align center
-		font-weight: 100
+    text-transform none
+    font-size: 20px
+    color blue
+    text-align center
+    font-weight: 100
 
-	span.free
-		color red
-		font-size: 23px
-		text-transform uppercase
+  span.free
+    color red
+    font-size: 23px
+    text-transform uppercase
 
-	span.start
-		font-size: 30px
-		font-weight: normal
+  span.start
+    font-size: 30px
+    font-weight: normal
 
-	form
-		width 100%
-		background dark_blue
-		margin-top 10px
-		border-top 15px blue solid
-		padding-bottom 20px
+  form
+    width 100%
+    background dark_blue
+    margin-top 10px
+    border-top 15px blue solid
+    padding-bottom 20px
 
-		h2
-			color white
-			margin 10px 0
-			text-transform uppercase
+    h2
+      color white
+      margin 10px 0
+      text-transform uppercase
 
-		line_height = 20px
+    line_height = 20px
 
-		input[type='text'], input[type='number']
-			height line_height
-			width: 180px
+    input[type='text'], input[type='number']
+      height line_height
+      width: 180px
 
-		label
-			margin 4px 5px 4px 20px
-			color white
-			font-weight bold
-			height line_height
-			display inline-block
-			width: 50px
-			line-height line_height
-			text-align right
+    label
+      margin 4px 5px 4px 20px
+      color white
+      font-weight bold
+      height line_height
+      display inline-block
+      width: 50px
+      line-height line_height
+      text-align right
 
-		label[for='comments']
-			width: 190px
-			margin-top 10px
-			text-align left
+    label[for='comments']
+      width: 190px
+      margin-top 10px
+      text-align left
 
-		textarea
-			margin = 10px
-			border_width = 3
+    textarea
+      margin = 10px
+      border_width = 3
 
-			height 70px
-			width right_col_width - margin*2 - border_width*2
-			margin 0 10px
-			margin-bottom margin*2
-			resize vertical
+      height 70px
+      width right_col_width - margin*2 - border_width*2
+      margin 0 10px
+      margin-bottom margin*2
+      resize vertical
 
 
-	fieldset
-		margin 5px 10px
-		border_radius(10px) 
-		border 1px blue solid
-		padding 10px 5px
+  fieldset
+    margin 5px 10px
+    border_radius(10px)
+    border 1px blue solid
+    padding 10px 5px
 
-		label
-			margin-left 5px
+    label
+      margin-left 5px
 
-		legend
-			padding 5px
-			color white
-			margin 0 10px
-			font-weight bold
+    legend
+      padding 5px
+      color white
+      margin 0 10px
+      font-weight bold
 
 .large_button
-	margin 10px auto
-	display block
-	text-align center
-	vertical-align middle
-	border_radius(20px)
-	background-clip padding-box
-	padding 10px 30px
-	font-size 20px
-	font-weight normal
-	color black
-	text-transform uppercase
-	border: 10px solid darken(blue, 15%)
+  margin 10px auto
+  display block
+  text-align center
+  vertical-align middle
+  border_radius(20px)
+  background-clip padding-box
+  padding 10px 30px
+  font-size 20px
+  font-weight normal
+  color black
+  text-transform uppercase
+  border: 10px solid darken(blue, 15%)
 
-	&:hover
-		text-decoration none
-		border 10px solid blue
+  &:hover
+    text-decoration none
+    border 10px solid blue
 
-	&.yellow
-		reg_gradent(yellow)
-	
-		&:active
-			reg_gradent(yellow, true)
+  &.yellow
+    reg_gradent(yellow)
 
-	&.gray
-		reg_gradent(gray)
-	
-		&:active
-			reg_gradent(gray, true)
+    &:active
+      reg_gradent(yellow, true)
+
+  &.gray
+    reg_gradent(gray)
+
+    &:active
+      reg_gradent(gray, true)
 
 a.large_button
-	display inline-block
-	padding 10px 10px
-	margin 0 5px
+  display inline-block
+  padding 10px 10px
+  margin 0 5px
 
-	&:hover
-		font-weight normal
-		color black
+  &:hover
+    font-weight normal
+    color black
 
 .container
-	border_radius(10px)
-	border 1px solid #ccc
-	padding 0
-	margin 50px 0
+  border_radius(10px)
+  border 1px solid #ccc
+  padding 0
+  margin 50px 0
 
-	//for bottom part
-	h2.contact_us
-		margin 7px 0 // reset
-		text-align center
-		text-transform capitalize
-		font-size 18px
-		font-family title_font
+  //for bottom part
+  h2.contact_us
+    margin 7px 0 // reset
+    text-align center
+    text-transform capitalize
+    font-size 18px
+    font-family title_font
 
 h2 strong
-	color blue
+  color blue

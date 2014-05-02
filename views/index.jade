@@ -2,51 +2,51 @@ extends layout
 include library
 
 block bannerhome
-	#bannerhome
-		img(src='/img/bg_banner.jpg')
-		p(style='display: none')
-			| We are your one-stop solution for business equipment packing, shipping and logistic services.
-		#banner-in
-			p
-				| Get anything 
-				br
-				| to anywhere with care,
-				strong the packaging store
-			a.large_button.yellow(href='/contact', style='line-height: 36px;') Get a free quote
-			a.large_button.gray(href='/services', style='font-size: 15px; width: 200px;') learn more about our services
+  #bannerhome
+    img(src='/img/bg_banner.jpg')
+    p(style='display: none')
+      | We are your one-stop solution for business equipment packing, shipping and logistic services.
+    #banner-in
+      p
+        | Get anything 
+        br
+        | to anywhere with care,
+        strong the packaging store
+      a.large_button.yellow(href='/contact', style='line-height: 36px;') Get a free quote
+      a.large_button.gray(href='/services', style='font-size: 15px; width: 200px;') learn more about our services
 
 block testi
-	mixin testi('Antonio Elago', 'Earthlink', 'The staff at The Packaging Store are experts when it comes to packaging sensitive electronic equipment and really go the extra mile when it comes to customer service...')
+  mixin testi('Antonio Elago', 'Earthlink', 'The staff at The Packaging Store are experts when it comes to packaging sensitive electronic equipment and really go the extra mile when it comes to customer service...')
 
 prepend main
-	h2
-		| Welcome to The Packaging Store
-		br
-		small Serving The Greater Milwaukee, WI Area 
-	p(style='margin: 14px 0 0px 0; color: #444;')
-		strong
-			i FLAV
-		sup ™ 
-		| [
-		i flav
-		| ] - noun
-	:markdown
-		*Anything classified as **Fragile, Large, Awkward, Valuable***  
+  h2
+    | Welcome to The Packaging Store
+    br
+    small Serving The Greater Milwaukee, WI Area 
+  p(style='margin: 14px 0 0px 0; color: #444;')
+    strong
+      i FLAV
+    sup ™ 
+    | [
+    i flav
+    | ] - noun
+  :markdown
+    *Anything classified as **Fragile, Large, Awkward, Valuable***
 
-		Customers have been trusting The Packaging Store to pack and ship their **FLAV** for over 25 years.  We are the experts in handling equipment, art, furniture, machinery and anything else that is classified as fragile, large, awkward, or valuable across the country or around the world.  
+    Customers have been trusting The Packaging Store to pack and ship their **FLAV** for over 25 years.  We are the experts in handling equipment, art, furniture, machinery and anything else that is classified as fragile, large, awkward, or valuable across the country or around the world.
 
-		Whether your shipment weighs one pound or thousands of pounds, you can trust The Packaging Store to get anything to anywhere with care.
+    Whether your shipment weighs one pound or thousands of pounds, you can trust The Packaging Store to get anything to anywhere with care.
 
-	.clearfix
-		h2 We're the experts in:
-		ul.biglist
-			li Receiving & local delivery
-			li Full service pickup & delivery
-			li Warehousing & fulfillment
-			li Full range of shipping options
-			li Custom packing & crating
-			li International ocean & air
+  .clearfix
+    h2 We're the experts in:
+    ul.biglist
+      li Receiving & local delivery
+      li Full service pickup & delivery
+      li Warehousing & fulfillment
+      li Full range of shipping options
+      li Custom packing & crating
+      li International ocean & air
 
 block right
-	img(src='/img/pic_hp.jpg')
-	//- override form to remove it from front page
+  img(src='/img/pic_hp.jpg')
+  //- override form to remove it from front page
